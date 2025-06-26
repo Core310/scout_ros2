@@ -4,7 +4,7 @@
 
 This repository contains minimal packages to control the scout robot using ROS. 
 
-* scout_base: a ROS wrapper around [ugv_sdk](https://github.com/westonrobot/ugv_sdk) to monitor and control the scout robot
+* scout_base: a ROS wrapper around [ugv_sdk](https://github.com/westonrobot/ugv_sdk) to monitor and control the scout robot. Containers odem and other common messages used to drive the bot.
 * scout_description: URDF model for the mobile base
 * scout_msgs: scout related message definitions
 

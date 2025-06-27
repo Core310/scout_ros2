@@ -24,7 +24,7 @@ ScoutBaseRos::ScoutBaseRos(std::string node_name)
   this->declare_parameter("base_frame", base_frame_, param_desc, false);
   this->declare_parameter("odom_topic_name", odom_topic_name_, param_desc, false);
 
-  this->declare_parameter("is_scout_mini", is_scout_mini_, param_desc, false);
+  this->declare_parameter("is_scout_mini", is_scout_mini_, param_desc, true);
   this->declare_parameter("is_omni_wheel", is_omni_wheel_, param_desc, false);
 
   this->declare_parameter("simulated_robot", simulated_robot_, param_desc, false);

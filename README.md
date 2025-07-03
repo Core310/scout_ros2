@@ -48,7 +48,7 @@ This repository contains minimal packages to control the scout robot using ROS.
 ## To run Scout2 on Gazebo 
 Launch the launch file `display_scout.launch.py`
 
-```
+``` (NOTE NOT USED IN THIS REPO)
 ros2 launch scout_description display_scout.launch.py
 ```
 

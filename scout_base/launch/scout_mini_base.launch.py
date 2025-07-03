@@ -14,7 +14,7 @@ def generate_launch_description():
                                              description='Use simulation clock if true')
 
     port_name_arg = DeclareLaunchArgument('port_name', default_value='can0',
-                                         description='CAN bus name, e.g. can0')
+                                          description='CAN bus name, e.g. can0')
     odom_frame_arg = DeclareLaunchArgument('odom_frame', default_value='odom',
                                            description='Odometry frame id')
     base_link_frame_arg = DeclareLaunchArgument('base_frame', default_value='base_link',
@@ -23,35 +23,35 @@ def generate_launch_description():
                                            description='Odometry topic name')
 
     is_scout_mini_arg = DeclareLaunchArgument('is_scout_mini', default_value='true',
-                                          description='Scout mini model')
+                                              description='Scout mini model')
     is_omni_wheel_arg = DeclareLaunchArgument('is_omni_wheel', default_value='false',
-                                          description='Scout mini omni-wheel model')
+                                              description='Scout mini omni-wheel model')
 
     simulated_robot_arg = DeclareLaunchArgument('simulated_robot', default_value='false',
-                                                   description='Whether running with simulator')
+                                                description='Whether running with simulator')
     sim_control_rate_arg = DeclareLaunchArgument('control_rate', default_value='50',
                                                  description='Simulation control loop update rate')
-    
+
     scout_base_node = launch_ros.actions.Node(
         package='scout_base',
         executable='scout_base_node',
         output='screen',
         emulate_tty=True,
         parameters=[{
-                'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
-                'port_name': launch.substitutions.LaunchConfiguration('port_name'),                
-                'odom_frame': launch.substitutions.LaunchConfiguration('odom_frame'),
-                'base_frame': launch.substitutions.LaunchConfiguration('base_frame'),
-                'odom_topic_name': launch.substitutions.LaunchConfiguration('odom_topic_name'),
-                'is_scout_mini': launch.substitutions.LaunchConfiguration('is_scout_mini'),
-                'is_omni_wheel': launch.substitutions.LaunchConfiguration('is_omni_wheel'),
-                'simulated_robot': launch.substitutions.LaunchConfiguration('simulated_robot'),
-                'control_rate': launch.substitutions.LaunchConfiguration('control_rate'),
+            'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
+            'port_name': launch.substitutions.LaunchConfiguration('port_name'),
+            'odom_frame': launch.substitutions.LaunchConfiguration('odom_frame'),
+            'base_frame': launch.substitutions.LaunchConfiguration('base_frame'),
+            'odom_topic_name': launch.substitutions.LaunchConfiguration('odom_topic_name'),
+            'is_scout_mini': launch.substitutions.LaunchConfiguration('is_scout_mini'),
+            'is_omni_wheel': launch.substitutions.LaunchConfiguration('is_omni_wheel'),
+            'simulated_robot': launch.substitutions.LaunchConfiguration('simulated_robot'),
+            'control_rate': launch.substitutions.LaunchConfiguration('control_rate'),
         }])
 
     return LaunchDescription([
         use_sim_time_arg,
-        port_name_arg,        
+        port_name_arg,
         odom_frame_arg,
         base_link_frame_arg,
         odom_topic_arg,

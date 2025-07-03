@@ -1,3 +1,42 @@
+#todo DELETE AS PART OF FINAL PACKAGE FINISH (this isn't used anymore due to build failure of not showing the actual robot...)
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
+#SEE ABOVE
 import os
 import launch
 import launch_ros
@@ -122,5 +161,4 @@ def generate_launch_description():
             # gazebo,
             # gazebo_spawn_robot,
             pointcloud_to_laserscan_node,
-
     ])

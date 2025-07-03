@@ -119,8 +119,8 @@ def generate_launch_description():
             robot_state_publisher_node,
             joint_state_publisher_node,
             rviz_node,
-            gazebo,
-            gazebo_spawn_robot,
+            # gazebo,
+            # gazebo_spawn_robot,
             pointcloud_to_laserscan_node,
 
     ])

@@ -31,6 +31,7 @@ This repository contains minimal packages to control the scout robot using ROS.
     $ colcon build
     ```
 
+
 2. Launch ROS nodes
  
 * Start the base node for the Scout robot
